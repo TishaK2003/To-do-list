@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;  /* Light gray background for the entire page */
+    margin: 0;
+    padding: 0;
+    display: flex;              /* Center the container vertically and horizontally */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+    height: 100vh;             /* Full height of the viewport */
+}
+
+/* Container Styles */
+.container {
+    width: 400px;              /* Fixed width for the container */
+    padding: 20px;            /* Inner padding */
+    background: white;        /* White background for the container */
+    border-radius: 12px;      /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;        /* Center the header text */
+    color: #333;               /* Dark color for header */
+    margin-bottom: 20px;      /* Space below the header */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="date"] {
+    width: calc(100% - 20px); /* Full width with padding consideration */
+    padding: 10px;            /* Inner padding */
+    margin: 5px 0;           /* Margin for spacing */
+    border: 2px solid #007bff; /* Border color */
+    border-radius: 6px;      /* Rounded corners */
+    font-size: 16px;         /* Font size */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Input Focus Styles */
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #0056b3;   /* Darker border color on focus */
+    outline: none;           /* Remove default outline */
+}
+
+/* Button Styles */
+button {
+    width: 100%;              /* Full width for button */
+    padding: 10px;           /* Inner padding */
+    background: #007bff;     /* Primary button color */
+    color: white;            /* Button text color */
+    border: none;            /* Remove default border */
+    border-radius: 6px;      /* Rounded corners */
+    font-size: 16px;         /* Font size */
+    cursor: pointer;         /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth transition for background */
+}
+
+/* Button Hover Styles */
+button:hover {
+    background: #0056b3;    /* Darker blue on hover */
+}
+
+/* List Styles */
+ul {
+    list-style: none;        /* Remove default list styling */
+    padding: 0;              /* Remove default padding */
+    margin-top: 20px;        /* Margin at the top */
+}
+
+/* List Item Styles */
+li {
+    display: flex;           /* Flexbox for list items */
+    justify-content: space-between; /* Space between text and delete button */
+    align-items: center;     /* Center items vertically */
+    padding: 10px;          /* Inner padding */
+    border-bottom: 1px solid #ddd; /* Separator line */
+    transition: background 0.2s; /* Smooth transition for background */
+}
+
+/* List Item Hover Styles */
+li:hover {
+    background: #f7f7f7;    /* Light gray on hover */
+}
+
+/* Completed Task Styles */
+li.completed {
+    text-decoration: line-through; /* Strikethrough for completed tasks */
+    color: gray;                  /* Gray text for completed tasks */
+}
+
+/* Due Date Styles */
+li .due-date {
+    font-size: 0.8em;         /* Smaller font for due date */
+    color: #555;              /* Dark gray color */
+    margin-left: 10px;        /* Margin for spacing */
+}
+
+/* Delete Button Styles */
+button.deleteBtn {
+    background: red;          /* Red background for delete button */
+    color: white;             /* White text color */
+    border: none;             /* Remove default border */
+    border-radius: 6px;       /* Rounded corners */
+    padding: 5px 10px;       /* Inner padding */
+    cursor: pointer;          /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth transition for background */
+}
+
+/* Delete Button Hover Styles */
+button.deleteBtn:hover {
+    background: darkred;      /* Darker red on hover */
+}
